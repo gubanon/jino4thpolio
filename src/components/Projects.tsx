@@ -7,60 +7,60 @@ import { ExternalLink, Github } from 'lucide-react';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', 'Big Data', 'Web Apps', 'UI/UX'];
+  const filters = ['All', 'Data Analytics', 'Social Media', 'Media Production', 'Administration', 'Data Management'];
 
   const projects = [
     {
-      title: 'Pharmacy Management System',
-      category: 'Web Apps',
-      description: 'Successfully deployed in a working pharmacy for stock and payment tracking',
-      technologies: ['Node.js', 'Express.js', 'PostgreSQL', 'CSS'],
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      demoUrl: '#',
+      title: 'Google Sheets Automation',
+      category: 'Data Analytics',
+      description: 'Client tracking system with automated data management and reporting',
+      technologies: ['Google Sheets', 'Data Management', 'Automation', 'Reporting'],
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
+      demoUrl: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRANDOM_ID/pubhtml',
       codeUrl: '#'
     },
     {
-      title: 'Flight Delay Prediction',
-      category: 'Big Data',
-      description: 'Predictive model using historical data from Kaggle',
-      technologies: ['Python', 'Jupyter', 'Power BI', 'Machine Learning'],
-      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop',
-      demoUrl: '#',
-      codeUrl: '#'
-    },
-    {
-      title: 'ESSU Property Inventory System',
-      category: 'Web Apps',
-      description: 'Real-time tracking of university assets with RFID integration',
-      technologies: ['Node.js', 'PostgreSQL', 'RFID', 'React'],
-      image: 'https://images.unsplash.com/photo-1586880244386-8b3e34c8382c?w=600&h=400&fit=crop',
-      demoUrl: '#',
-      codeUrl: '#'
-    },
-    {
-      title: 'Research Statistics Dashboard',
-      category: 'Big Data',
-      description: 'Delivered academic research analysis in 2 days instead of 2 weeks',
-      technologies: ['Jamovi', 'Python', 'Data Visualization'],
+      title: 'Tableau Dashboard',
+      category: 'Data Analytics',
+      description: 'Interactive data visualization dashboard for business insights',
+      technologies: ['Tableau', 'Data Visualization', 'Analytics', 'Dashboard Design'],
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      demoUrl: '#',
+      demoUrl: 'https://public.tableau.com/app/profile/jino.docena/viz/tableu_17540293146910/Dashboard1',
       codeUrl: '#'
     },
     {
-      title: 'E-commerce UI Design',
-      category: 'UI/UX',
-      description: 'Modern, responsive design for online marketplace',
-      technologies: ['Figma', 'Prototyping', 'User Research'],
-      image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop',
-      demoUrl: '#',
+      title: 'Social Media Content',
+      category: 'Social Media',
+      description: 'Creative content creation and social media management',
+      technologies: ['Canva', 'Content Creation', 'Social Media Strategy', 'Brand Management'],
+      image: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop',
+      demoUrl: 'https://www.instagram.com/tagatop',
       codeUrl: '#'
     },
     {
-      title: 'Government Portal Redesign',
-      category: 'UI/UX',
-      description: 'User-centered redesign of government service portal',
-      technologies: ['Figma', 'User Testing', 'Accessibility'],
+      title: 'Video Editing Projects',
+      category: 'Media Production',
+      description: 'Professional video editing and content production',
+      technologies: ['Filmora', 'CapCut', 'Video Editing', 'Content Production'],
+      image: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=600&h=400&fit=crop',
+      demoUrl: 'https://www.youtube.com/@khelzing',
+      codeUrl: '#'
+    },
+    {
+      title: 'Administrative Solutions',
+      category: 'Administration',
+      description: 'Streamlined administrative processes and documentation systems',
+      technologies: ['Microsoft Office', 'Process Optimization', 'Documentation', 'Workflow Management'],
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop',
+      demoUrl: '#',
+      codeUrl: '#'
+    },
+    {
+      title: 'Data Entry & Management',
+      category: 'Data Management',
+      description: 'Efficient data entry and database management solutions',
+      technologies: ['Data Entry', 'Database Management', 'Quality Control', 'Data Validation'],
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop',
       demoUrl: '#',
       codeUrl: '#'
     }
@@ -78,7 +78,7 @@ const Projects = () => {
             Projects
           </h2>
           <p className="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            A showcase of real-world projects demonstrating my expertise across different domains
+            Portfolio showcasing virtual assistance, data analytics, and administrative expertise
           </p>
 
           {/* Filter Buttons */}

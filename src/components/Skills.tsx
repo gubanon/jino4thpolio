@@ -4,22 +4,22 @@ import { Database, Code, Palette } from 'lucide-react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Big Data Analytics',
+      title: 'Administrative Tools',
       icon: Database,
       color: 'text-blue-400',
-      skills: ['Python', 'R', 'Power BI', 'Tableau', 'Jupyter Notebook', 'PostgreSQL', 'Apache Spark']
+      skills: ['Microsoft Office', 'Google Workspace', 'Data Entry', 'Document Management', 'Process Optimization']
     },
     {
-      title: 'Web Development',
-      icon: Code,
-      color: 'text-green-400',
-      skills: ['JavaScript', 'Node.js', 'Express.js', 'PostgreSQL', 'React', 'TypeScript', 'CSS3', 'HTML5', 'Tailwind CSS']
-    },
-    {
-      title: 'UI/UX Design',
+      title: 'Creative & Media',
       icon: Palette,
       color: 'text-purple-400',
-      skills: ['Figma', 'Wireframing', 'Prototyping', 'Responsive Design']
+      skills: ['Canva', 'Filmora', 'CapCut', 'Video Editing', 'Social Media Content', 'Graphic Design']
+    },
+    {
+      title: 'Data & Analytics',
+      icon: Code,
+      color: 'text-green-400',
+      skills: ['Data Analytics', 'Tableau', 'Google Sheets Automation', 'Data Management', 'Reporting']
     }
   ];
 
@@ -31,7 +31,7 @@ const Skills = () => {
             Skills
           </h2>
           <p className="text-xl text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
-            A comprehensive skill set spanning data analytics, web development, and design
+            A diverse skill set spanning administration, creative media, and data analytics
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -71,7 +71,7 @@ const Skills = () => {
             <Card className="glass-card p-6 inline-block animate-fade-in-up">
               <h3 className="text-xl font-semibold mb-4 text-accent">Additional Expertise</h3>
               <div className="flex flex-wrap justify-center gap-2">
-                {['Data Engineering', 'Data Science', 'Machine Learning', 'RFID Integration', 'API Development', 'Database Design'].map((skill, index) => (
+                {['Virtual Assistance', 'Administrative Support', 'Social Media Management', 'Automation Tools', 'Customer Service', 'Project Coordination'].map((skill, index) => (
                   <span
                     key={skill}
                     className="skill-tag animate-scale-in"

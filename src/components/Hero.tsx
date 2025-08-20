@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="relative">
               <img
                 src={profileImage}
-                alt="Marlon Dave M. Evardone"
+                alt="Jino Docena"
                 className="w-48 h-48 md:w-64 md:h-64 rounded-full mx-auto object-cover border-4 border-primary/50 animate-glow-pulse"
               />
               <div className="absolute inset-0 rounded-full bg-glow-gradient opacity-30 animate-pulse"></div>
@@ -51,16 +51,16 @@ const Hero = () => {
 
           {/* Name and Title */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="glow-text">Marlon Dave M. Evardone</span>
+            <span className="glow-text">Jino Docena</span>
           </h1>
           
           <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6">
-            Big Data Analytics | Web Developer | UI/UX Designer
+            Virtual Assistant | Data Analyst | Social Media Manager
           </h2>
 
           {/* Quote */}
           <p className="text-lg md:text-xl italic text-accent mb-8 max-w-2xl mx-auto">
-            "Turning curiosity into code, and data into decisions."
+            "Self-driven professional with 15+ years of government experience, bringing expertise and dedication to dynamic teams."
           </p>
 
           {/* CTA Buttons */}

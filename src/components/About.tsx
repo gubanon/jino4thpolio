@@ -3,8 +3,8 @@ import { GraduationCap, MapPin, Calendar } from 'lucide-react';
 
 const About = () => {
   const traits = [
-    'Focus', 'Problem-solving', 'Dedication', 'Research-driven',
-    'Detail oriented', 'Team player', 'Adaptable', 'Curious'
+    'Self-driven', 'Detail-oriented', 'Adaptable', 'Dedicated',
+    'Administrative Expert', 'Team player', 'Learning focused', 'Efficient'
   ];
 
   return (
@@ -19,14 +19,15 @@ const About = () => {
             {/* Description */}
             <div className="space-y-6 animate-fade-in-up">
               <p className="text-lg leading-relaxed text-foreground/90">
-                I'm a Computer Engineering graduate from Eastern Samar State University (Class of 2025). 
-                I'm a team player who thrives on challenges. I dive deep into research when curious and 
-                find purpose in completing what I start.
+                I am a self-driven and detail-oriented professional with over 15 years of experience in 
+                government service. While I am new to the field of virtual assistance, I am actively 
+                self-studying and continuously improving my technical skills.
               </p>
               
               <p className="text-lg leading-relaxed text-foreground/90">
-                My passion is strongest when working on data analytics and web applications. 
-                I focus deeply and deliver projects rapidly.
+                My strong background in administration, combined with my adaptability and passion for learning, 
+                enables me to quickly grasp new tools and processes. I am eager to bring my expertise, 
+                efficiency, and dedication to a dynamic team.
               </p>
 
               {/* Traits */}
@@ -55,12 +56,12 @@ const About = () => {
                     <GraduationCap size={24} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2 text-accent">Education</h3>
-                    <p className="font-medium">Bachelor of Science in Computer Engineering</p>
-                    <p className="text-muted-foreground">Eastern Samar State University</p>
+                    <h3 className="text-xl font-semibold mb-2 text-accent">Experience</h3>
+                    <p className="font-medium">Government Service Professional</p>
+                    <p className="text-muted-foreground">15+ Years in Administration</p>
                     <div className="flex items-center mt-2 text-sm text-muted-foreground">
                       <Calendar className="mr-1 h-4 w-4" />
-                      June 17, 2025
+                      2009 - Present
                     </div>
                   </div>
                 </div>
@@ -73,15 +74,15 @@ const About = () => {
                     <MapPin size={24} />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-2 text-accent">Experience</h3>
-                    <p className="font-medium">OJT Intern – Web App Developer</p>
-                    <p className="text-muted-foreground">SMART Technology Research Development and Innovation Center (STRDIC)</p>
+                    <h3 className="text-xl font-semibold mb-2 text-accent">Current Focus</h3>
+                    <p className="font-medium">Virtual Assistant & Data Analytics</p>
+                    <p className="text-muted-foreground">Self-studying & Skill Development</p>
                     <div className="flex items-center mt-2 text-sm text-muted-foreground">
                       <Calendar className="mr-1 h-4 w-4" />
-                      June–July 2024 • Borongan City
+                      2024 - Present
                     </div>
                     <p className="mt-3 text-sm text-foreground/80">
-                      Developed a centralized application for LGU project transparency and public access.
+                      Transitioning into virtual assistance, data entry, data analytics, and social media management.
                     </p>
                   </div>
                 </div>
@@ -92,16 +93,16 @@ const About = () => {
                 <h3 className="text-xl font-semibold mb-4 text-accent">Certifications</h3>
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
-                    <span>Data Analyst (Google Certified)</span>
-                    <span className="skill-tag">Verified</span>
+                    <span>Government Administration</span>
+                    <span className="skill-tag">15+ Years</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>Junior Web App Developer</span>
+                    <span>Virtual Assistant Training</span>
                     <span className="skill-tag">Active</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>Power BI Analyst</span>
-                    <span className="skill-tag">Certified</span>
+                    <span>Data Analytics</span>
+                    <span className="skill-tag">Learning</span>
                   </div>
                 </div>
               </Card>

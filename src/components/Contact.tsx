@@ -43,21 +43,21 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'davemarlon74@gmail.com',
-      href: 'mailto:davemarlon74@gmail.com',
+      value: 'jinodocena11@email.com',
+      href: 'mailto:jinodocena11@email.com',
       color: 'text-blue-400'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+63 956 349 6727',
-      href: 'tel:+639563496727',
+      value: 'Available upon request',
+      href: '#',
       color: 'text-green-400'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Eastern Samar, Philippines',
+      value: 'Philippines',
       href: '#',
       color: 'text-red-400'
     }
@@ -66,20 +66,20 @@ const Contact = () => {
   const socialLinks = [
     {
       icon: Github,
-      label: 'GitHub',
-      href: 'https://github.com/daveevardone12',
-      color: 'text-gray-400 hover:text-white'
+      label: 'YouTube',
+      href: 'https://www.youtube.com/@khelzing',
+      color: 'text-red-400 hover:text-red-300'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/marlon-dave-evardone-1a5013297/',
+      href: 'https://www.linkedin.com/in/jino-docena-b2b255376',
       color: 'text-blue-400 hover:text-blue-300'
     },
     {
       icon: Facebook,
       label: 'Facebook',
-      href: 'https://www.facebook.com/marlondave.evardone',
+      href: 'https://www.facebook.com/onig11',
       color: 'text-blue-500 hover:text-blue-400'
     }
   ];
@@ -160,7 +160,7 @@ const Contact = () => {
                   className="bg-primary hover:bg-primary/80 text-primary-foreground glow-border"
                   asChild
                 >
-                  <a href="mailto:davemarlon74@gmail.com">
+                  <a href="mailto:jinodocena11@email.com">
                     <Mail className="mr-2 h-4 w-4" />
                     Quick Email
                   </a>
