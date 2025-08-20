@@ -2,41 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Space Portfolio Design System - All colors, gradients, fonts, etc defined here. 
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Space Theme - Dark Background */
+    --background: 230 35% 7%;
+    --foreground: 0 0% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Glassmorphism Cards */
+    --card: 230 35% 8%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 230 35% 8%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cyan/Blue Glow Theme */
+    --primary: 195 100% 50%;
+    --primary-foreground: 230 35% 7%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 230 35% 12%;
+    --secondary-foreground: 195 100% 80%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 230 35% 10%;
+    --muted-foreground: 195 20% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 195 80% 60%;
+    --accent-foreground: 230 35% 7%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Glowing borders and inputs */
+    --border: 195 50% 25%;
+    --input: 230 35% 12%;
+    --ring: 195 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Custom Space Theme Variables */
+    --glow-primary: 195 100% 50%;
+    --glow-secondary: 195 100% 70%;
+    --space-card: 230 35% 8% / 0.8;
+    --space-glass: 230 35% 15% / 0.1;
+    
+    /* Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(195 100% 50% / 0.1), hsl(260 100% 60% / 0.1));
+    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(195 100% 50% / 0.3), transparent 70%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(195 100% 50% / 0.3);
+    --shadow-card: 0 10px 30px hsl(230 35% 5% / 0.5);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +74,12 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Dark mode enhances the space theme */
+    --background: 230 35% 5%;
+    --card: 230 35% 6%;
+    --muted: 230 35% 8%;
+    --border: 195 50% 20%;
+    --shadow-glow: 0 0 40px hsl(195 100% 50% / 0.4);
   }
 }
 
@@ -100,6 +89,57 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground overflow-x-hidden;
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, rgba(195, 220, 255, 0.3), transparent),
+      radial-gradient(2px 2px at 40px 70px, rgba(195, 220, 255, 0.2), transparent),
+      radial-gradient(1px 1px at 90px 40px, rgba(195, 220, 255, 0.4), transparent),
+      radial-gradient(1px 1px at 130px 80px, rgba(195, 220, 255, 0.2), transparent),
+      radial-gradient(2px 2px at 160px 30px, rgba(195, 220, 255, 0.3), transparent);
+    background-repeat: repeat;
+    background-size: 200px 100px;
+    background-attachment: fixed;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50;
+    box-shadow: var(--shadow-card), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .glow-text {
+    color: hsl(var(--primary));
+    text-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  }
+
+  .glow-border {
+    border-color: hsl(var(--primary));
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+
+  .cosmic-gradient {
+    background: var(--gradient-cosmic);
+  }
+
+  .skill-tag {
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+    @apply bg-secondary/50 text-secondary-foreground border border-accent/30;
+    @apply hover:bg-accent/20 hover:border-accent transition-all duration-300;
+  }
+
+  .project-card {
+    @apply glass-card p-6 rounded-2xl hover:scale-105 transition-all duration-500;
+    @apply hover:shadow-[0_0_30px_hsl(var(--primary)/0.3)];
+  }
+
+  .nav-link {
+    @apply relative text-foreground/80 hover:text-primary transition-colors duration-300;
+    @apply after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0;
+    @apply after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
   }
 }
