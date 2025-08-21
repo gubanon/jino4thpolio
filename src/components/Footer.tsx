@@ -43,7 +43,7 @@ const Footer = () => {
           
           <div className="space-y-4 text-muted-foreground">
             <p className="text-lg">
-              © 2024 Marlon Dave M. Evardone. All rights reserved.
+              © 2024 Jino Docena. All rights reserved.
             </p>
             <p className="flex items-center justify-center space-x-1 text-sm">
               <span>Made with</span>

@@ -8,53 +8,53 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Space Theme - Dark Background */
-    --background: 230 35% 7%;
+    /* Enhanced Space Theme - Rich Dark Background */
+    --background: 220 40% 6%;
     --foreground: 0 0% 98%;
 
-    /* Glassmorphism Cards */
-    --card: 230 35% 8%;
-    --card-foreground: 0 0% 95%;
+    /* Premium Glassmorphism Cards */
+    --card: 220 40% 8%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 230 35% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 220 40% 8%;
+    --popover-foreground: 0 0% 96%;
 
-    /* Cyan/Blue Glow Theme */
-    --primary: 195 100% 50%;
-    --primary-foreground: 230 35% 7%;
+    /* Vibrant Cyan/Purple Glow Theme */
+    --primary: 190 100% 55%;
+    --primary-foreground: 220 40% 6%;
 
-    --secondary: 230 35% 12%;
-    --secondary-foreground: 195 100% 80%;
+    --secondary: 220 40% 14%;
+    --secondary-foreground: 190 100% 85%;
 
-    --muted: 230 35% 10%;
-    --muted-foreground: 195 20% 60%;
+    --muted: 220 40% 10%;
+    --muted-foreground: 190 30% 65%;
 
-    --accent: 195 80% 60%;
-    --accent-foreground: 230 35% 7%;
+    --accent: 270 70% 65%;
+    --accent-foreground: 220 40% 6%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    /* Glowing borders and inputs */
-    --border: 195 50% 25%;
-    --input: 230 35% 12%;
-    --ring: 195 100% 50%;
+    /* Enhanced Glowing borders and inputs */
+    --border: 190 60% 30%;
+    --input: 220 40% 12%;
+    --ring: 190 100% 55%;
 
     --radius: 1rem;
 
-    /* Custom Space Theme Variables */
-    --glow-primary: 195 100% 50%;
-    --glow-secondary: 195 100% 70%;
-    --space-card: 230 35% 8% / 0.8;
-    --space-glass: 230 35% 15% / 0.1;
+    /* Enhanced Space Theme Variables */
+    --glow-primary: 190 100% 55%;
+    --glow-secondary: 270 70% 65%;
+    --space-card: 220 40% 8% / 0.85;
+    --space-glass: 220 40% 15% / 0.12;
     
-    /* Gradients */
-    --gradient-cosmic: linear-gradient(135deg, hsl(195 100% 50% / 0.1), hsl(260 100% 60% / 0.1));
-    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(195 100% 50% / 0.3), transparent 70%);
+    /* Enhanced Gradients */
+    --gradient-cosmic: linear-gradient(135deg, hsl(190 100% 55% / 0.15), hsl(270 70% 65% / 0.15));
+    --gradient-glow: radial-gradient(circle at 50% 50%, hsl(190 100% 55% / 0.4), transparent 70%);
     
-    /* Shadows */
-    --shadow-glow: 0 0 30px hsl(195 100% 50% / 0.3);
-    --shadow-card: 0 10px 30px hsl(230 35% 5% / 0.5);
+    /* Enhanced Shadows */
+    --shadow-glow: 0 0 40px hsl(190 100% 55% / 0.4);
+    --shadow-card: 0 15px 40px hsl(220 40% 4% / 0.6);
 
     --sidebar-background: 0 0% 98%;
 
