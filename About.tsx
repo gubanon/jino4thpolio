@@ -101,7 +101,7 @@ const About = () => {
                     <span className="skill-tag">Active</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span>Data Analytics</span>
+                    <span>Data Analytics & Web Development</span>
                     <span className="skill-tag">Learning</span>
                   </div>
                 </div>

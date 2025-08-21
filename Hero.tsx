@@ -55,7 +55,7 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-xl md:text-2xl lg:text-3xl text-muted-foreground mb-6">
-            Virtual Assistant | Data Analyst | Social Media Manager
+            Virtual Assistant | Data Analyst | Social Media Manager | Web Developer
           </h2>
 
           {/* Quote */}
@@ -79,7 +79,7 @@ const Hero = () => {
               className="border-primary/50 text-primary hover:bg-primary/10 px-8 py-3 text-lg font-semibold rounded-xl transition-all duration-300"
               asChild
             >
-              <a href="https://docs.google.com/document/d/19atGj4LEza10Of6y8I_SGFu4PTBMC6Ov/edit?usp=sharing&ouid=114356221911419002188&rtpof=true&sd=true" download>
+              <a href="/Jino_Docena_Resume.pdf" download>
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>

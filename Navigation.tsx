@@ -46,7 +46,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="glow-text font-bold text-xl">
-            Marlon Dave Evardone
+            Jino Docena
           </div>
 
           {/* Desktop Navigation */}

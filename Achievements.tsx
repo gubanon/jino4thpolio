@@ -26,7 +26,7 @@ const Achievements = () => {
 
   const certificates = [
     {
-      title: 'Google Data Analytics Certificate',
+      title: 'Google Advanced Data Analytics Certificate',
       issuer: 'Coursera',
       date: '2024',
       credentialId: 'CRS-12345',

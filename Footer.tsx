@@ -48,7 +48,7 @@ const Footer = () => {
             <p className="flex items-center justify-center space-x-1 text-sm">
               <span>Made with</span>
               <Heart className="h-4 w-4 text-red-400 fill-current animate-pulse" />
-              <span>and lots of love and passion</span>
+              <span>prayers of luck and passion</span>
             </p>
             <p className="text-sm">
               "Don't give up, God is always there."
