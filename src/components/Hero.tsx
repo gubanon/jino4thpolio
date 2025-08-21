@@ -79,7 +79,7 @@ const Hero = () => {
               className="border-primary/50 text-primary hover:bg-primary/10 px-8 py-3 text-lg font-semibold rounded-xl transition-all duration-300"
               asChild
             >
-              <a href="https://docs.google.com/document/d/19atGj4LEza10Of6y8I_SGFu4PTBMC6Ov/edit?usp=sharing&ouid=114356221911419002188&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.google.com/document/d/19atGj4LEza10Of6y8I_SGFu4PTBMC6Ov/export?format=pdf" download="Jino_Docena_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Download className="mr-2 h-5 w-5" />
                 Download Resume
               </a>
