@@ -1,8 +1,14 @@
 import { Card } from '@/components/ui/card';
-import { Database, Code, Palette } from 'lucide-react';
+import { Database, Code, Palette, Globe } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
+    {
+      title: 'Web Development',
+      icon: Globe,
+      color: 'text-cyan-400',
+      skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'Node.js', 'Python', 'WordPress']
+    },
     {
       title: 'Administrative Tools',
       icon: Database,
@@ -34,7 +40,7 @@ const Skills = () => {
             A diverse skill set spanning administration, creative media, and data analytics
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {skillCategories.map((category, index) => {
               const IconComponent = category.icon;
               return (
@@ -71,7 +77,7 @@ const Skills = () => {
             <Card className="glass-card p-6 inline-block animate-fade-in-up">
               <h3 className="text-xl font-semibold mb-4 text-accent">Additional Expertise</h3>
               <div className="flex flex-wrap justify-center gap-2">
-                {['Virtual Assistance', 'Administrative Support', 'Social Media Management', 'Automation Tools', 'Customer Service', 'Project Coordination'].map((skill, index) => (
+                {['Web Developer', 'Virtual Assistance', 'Administrative Support', 'Social Media Management', 'Automation Tools', 'Customer Service', 'Project Coordination'].map((skill, index) => (
                   <span
                     key={skill}
                     className="skill-tag animate-scale-in"
