@@ -10,13 +10,13 @@ const Achievements = () => {
       title: 'Open Source Contributor',
       description: 'Contributed to several open source projects.',
       type: 'Community',
-      url: 'https://github.com/',
+      url: 'https://github.com',
       color: 'text-yellow-400'
     },
     {
       icon: Award,
-      title: 'Hackathon Winner',
-      description: 'Won 1st place at XYZ Hackathon.',
+      title: 'Palarong Pambansa Coach',
+      description: '2 Time Palarong Pambansa Coach',
       type: 'Competition',
       url: 'https://example.com/',
       certificateUrl: 'https://example.com/certificate.pdf',
@@ -26,24 +26,24 @@ const Achievements = () => {
 
   const certificates = [
     {
-      title: 'Google Data Analytics Certificate',
-      issuer: 'Google',
+      title: 'Google Advanced Data Analytics Certificate',
+      issuer: 'Google/DTI/Coursera',
       date: '2024',
       credentialId: 'GOOG-12345',
       url: '#'
     },
     {
-      title: 'Power BI Data Analyst Associate',
-      issuer: 'Microsoft',
+      title: 'Google Cybersecurity Certificate',
+      issuer: 'Google/DTI/Coursera',
       date: '2024',
-      credentialId: 'MS-67890',
+      credentialId: 'DTI-ITU',
       url: '#'
     },
     {
-      title: 'Junior Web Developer',
-      issuer: 'FreeCodeCamp',
-      date: '2023',
-      credentialId: 'FCC-11111',
+      title: 'Beginner Web Developer',
+      issuer: 'DICT-ITU',
+      date: '2025',
+      credentialId: 'DICT-ITU INITIATIVE',
       url: '#'
     }
   ];
