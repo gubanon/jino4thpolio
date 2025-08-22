@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin, Github, Linkedin, Facebook, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -21,15 +22,37 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // EmailJS configuration
+      const serviceId = 'service_ultf8hx';
+      const templateId = 'template_097zy6e';
+      const publicKey = 'uxzgDA96NgXmmbqd6';
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'jinodocena11@email.com', // Your email where you want to receive messages
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      
       toast({
         title: "Message sent!",
         description: "Thank you for your message. I'll get back to you soon.",
       });
       setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      console.error("An error occurred:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
