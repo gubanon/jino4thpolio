@@ -25,7 +25,7 @@ const Contact = () => {
     try {
       // EmailJS configuration - UPDATE THESE WITH YOUR ACTUAL VALUES
       const serviceId = 'service_ultf8hx'; // Your EmailJS service ID
-      const templateId = 'template_097zy6e'; // ⚠️ REPLACE with your actual template ID
+      const templateId = 'template_83b52bt'; // Updated with your correct template ID
       const publicKey = 'uxzgDA96NgXmmbqd6'; // Your EmailJS public key
 
       const templateParams = {
