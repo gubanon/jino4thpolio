@@ -23,19 +23,20 @@ const Contact = () => {
     setIsSubmitting(true);
 
     try {
-      // EmailJS configuration
-      const serviceId = 'service_ultf8hx';
-      const templateId = 'template_097zy6e';
-      const publicKey = 'uxzgDA96NgXmmbqd6';
+      // EmailJS configuration - UPDATE THESE WITH YOUR ACTUAL VALUES
+      const serviceId = 'service_ultf8hx'; // Your EmailJS service ID
+      const templateId = 'template_097zy6e'; // ⚠️ REPLACE with your actual template ID
+      const publicKey = 'uxzgDA96NgXmmbqd6'; // Your EmailJS public key
 
       const templateParams = {
         from_name: formData.name,
         from_email: formData.email,
         subject: formData.subject,
         message: formData.message,
-        to_email: 'jinodocena11@email.com', // Your email where you want to receive messages
+        to_email: 'jinodocena11@email.com',
       };
 
+      console.log('Sending email with params:', templateParams);
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
       
       toast({
